@@ -1,0 +1,15 @@
+# Запускаем простой HTTP-сервер на порту 8000
+python3 -m http.server 8000 &
+
+# Получаем HTTP-заголовки
+curl -I http://localhost:8000
+
+# Ожидаемый результат:
+# HTTP/1.0 200 OK
+# Server: SimpleHTTP/0.6 Python/3.x.x
+# Date: ...
+# Content-type: text/html
+# Content-Length: ...
+
+# Останавливаем сервер
+pkill -f "python3 -m http.server"
