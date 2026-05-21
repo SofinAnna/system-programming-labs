@@ -1,0 +1,1 @@
+ Получить HTTP-заголовки локального сервера через curl -I http://localhost:PORT.
